@@ -11,8 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Behaviours\" />
-    <Folder Include="Features\Streamer2\Queries\" />
+    <Folder Include="Features\Streamer\Queries\" />
     <Folder Include="Features\Videos\Commands\" />
   </ItemGroup>
 

@@ -13,14 +13,14 @@ namespace CleanArchitecture.Application.Contracts.Persistence
                                                                               // le vamos a pasar un obj del tipo expression, que a su vez contiene un Func y un bool y esa expression se va a transformar a futuro en una expression del tipo SQL, 
                                                                               // para luego ejecutar la query en la BD
         // ordenamiento
-        Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null,
-        Func<IQueryable<T>, IOrderedQueryable<T>> orderby = null,
-        string includeString = null,
+        Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>>? predicate = null,
+        Func<IQueryable<T>, IOrderedQueryable<T>>? orderby = null,
+        string? includeString = null,
         bool disableTracking = true);
         // paginacion
-        Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>> predicate = null,
-        Func<IQueryable<T>, IOrderedQueryable<T>> orderby = null,
-        List<Expression<Func<T,object>>> includes=null,
+        Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>>? predicate = null,
+        Func<IQueryable<T>, IOrderedQueryable<T>>? orderby = null,
+        List<Expression<Func<T,object>>>? includes =null,
         bool disableTracking = true);
         //Query para hacer la consulta por id
         Task<T> GetByIdAsync(int id);
