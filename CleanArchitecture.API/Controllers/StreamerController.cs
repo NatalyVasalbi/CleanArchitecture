@@ -8,11 +8,11 @@ namespace CleanArchitecture.API.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
-    public class StreameController:ControllerBase
+    public class StreamerController:ControllerBase
     {
         private IMediator _mediator;
 
-        public StreameController(IMediator mediator)
+        public StreamerController(IMediator mediator)
         {
             _mediator = mediator;
         }
